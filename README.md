@@ -55,7 +55,6 @@ This portfolio website is designed to provide a clean and responsive interface w
 ---
 
 ## Project Structure
-
 karthik-portfolio/
 │
 ├── index.html
@@ -70,7 +69,6 @@ karthik-portfolio/
 │ └── script.js
 │
 └── images/
-
 ---
 
 ## Featured Projects
