@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Karthik Raj</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">Karthik</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <button id="dark-toggle">🌙</button>
+        </nav>
+    </header>
+
+    <section class="contact-section reveal">
+        <h2>Contact</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name">
+            <input type="email" id="email" placeholder="Your Email">
+            <textarea id="message" placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+
+        <!-- For showing messages -->
+        <p id="formMessage"></p>
+    </form>
+
+
+        <p>You can also email me directly at:  
+            <a href="mailto:karthik@example.com">karthik@example.com</a>
+        </p>
+    </section>
+
+    <button id="scrollTopBtn">↑</button>
+    <script src="js/script.js"></script>
+</body>
+</html>

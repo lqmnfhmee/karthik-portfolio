@@ -1,0 +1,303 @@
+/* ---------------------------
+   Global Settings
+---------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Pastel Color Theme */
+:root {
+    --bg: #fdf6f0;
+    --text: #444;
+    --primary: #a8d8ea; /* pastel blue */
+    --secondary: #ffb6b9; /* pastel pink */
+    --accent: #bbded6; /* mint */
+}
+
+/* Improved Dark Mode */
+.dark-mode {
+    --bg: #121212;          /* deep modern black */
+    --text: #f5f5f5;        /* soft white */
+    --primary: #3b657a;     /* pastel blue dark version */
+    --secondary: #c97a86;   /* pastel pink dark version */
+    --accent: #4e8a79;      /* mint dark version */
+}
+
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    transition: 0.3s ease-in-out;
+}
+
+/* ---------------------------
+   Navbar
+---------------------------- */
+.navbar {
+    width: 100%;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--primary);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--text);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text);
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+    color: var(--secondary);
+}
+
+/* Dark Mode Button */
+#dark-toggle {
+    border: none;
+    background: var(--secondary);
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+#dark-toggle:hover {
+    background: var(--accent);
+}
+
+/* ---------------------------
+   Home Section
+---------------------------- */
+.home {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+}
+
+.home h1 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.home span {
+    color: var(--secondary);
+    font-weight: 700;
+}
+
+.home p {
+    margin: 15px 0;
+    font-size: 18px;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--secondary);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    margin-top: 15px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: var(--accent);
+}
+
+/* ---------------------------
+   About Section
+---------------------------- */
+.about-section {
+    padding: 80px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: var(--secondary);
+}
+
+.about-section p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    line-height: 1.7;
+}
+
+/* ---------------------------
+   Projects Section
+---------------------------- */
+.projects-section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.projects-section h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: var(--secondary);
+}
+
+.project-list {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.project-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 6px solid var(--primary);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    background: var(--accent);
+}
+
+.dark-mode .project-card {
+    background: #2a2a2a;
+    border-left-color: var(--primary);
+    color: var(--text);
+}
+
+.dark-mode .project-card:hover {
+    background: #3c3c3c;
+}
+
+.dark-mode .project-card h3,
+.dark-mode .project-card p {
+    color: var(--text);
+}
+
+
+/* ---------------------------
+   Contact Section
+---------------------------- */
+.contact-section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: var(--secondary);
+}
+
+#contactForm {
+    max-width: 450px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#contactForm input,
+#contactForm textarea {
+    padding: 12px;
+    border: 2px solid var(--primary);
+    border-radius: 6px;
+    resize: none;
+    font-size: 16px;
+}
+
+#contactForm button {
+    padding: 12px;
+    background: var(--secondary);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#contactForm button:hover {
+    background: var(--accent);
+}
+
+/* Scroll To Top Button */
+#scrollTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: var(--secondary);
+    color: white;
+    border: none;
+    padding: 12px 15px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+    transition: 0.3s;
+}
+
+#scrollTopBtn:hover {
+    background: var(--accent);
+}
+
+#typingText {
+    font-size: 18px;
+    margin-top: 10px;
+    color: var(--text);
+    height: 24px;
+}
+
+/* Scroll Reveal Animations */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 0.8s ease-in-out;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Form Message Styling */
+#formMessage {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#formMessage.error {
+    color: #ff6b6b;
+}
+
+#formMessage.success {
+    color: #51cf66;
+}
