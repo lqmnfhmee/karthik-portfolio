@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Karthik Raj | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="container navbar">
+    <div class="nav-brand">Home</div>
+    <button id="themeToggle">Dark Mode</button>
+    <button id="menuToggle" class="menu-toggle">Menu</button>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="container hero">
+    <div class="hero-text reveal">
+      <p class="subtitle">Personal Portfolio</p>
+      <h1>Hello, I’m Karthik Raj</h1>
+      <div class="typing-wrapper">
+        <span class="typing-label">I am a </span>
+        <span id="typingText"></span>
+      </div>
+      <p style="max-width: 32rem; margin-bottom: 1.4rem;">
+        I’m a full-time student who enjoys building digital experiences, exploring new technologies,
+        and turning ideas into working projects.
+      </p>
+      <div class="hero-cta">
+        <a href="projects.html" class="btn btn-primary">View My Projects</a>
+        <a href="contact.html" class="btn btn-ghost">Contact Me</a>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal"></div>
+  </section>
+</main>
+
+<button id="scrollTopBtn">Top</button>
+
+<footer>
+  <div class="container">
+    © <span id="year"></span> Karthik Raj · Built with HTML, CSS &amp; JavaScript.
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

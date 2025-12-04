@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact | Karthik Raj</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="container navbar">
+    <div class="nav-brand">Contact</div>
+    <button id="themeToggle">Dark Mode</button>
+    <button id="menuToggle" class="menu-toggle">Menu</button>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="container reveal">
+    <h2 class="section-title">Contact</h2>
+    <p class="section-subtitle">
+      Have a question or want to collaborate? Send me a message.
+    </p>
+
+    <div class="contact-grid">
+      <form id="contactForm" class="contact-form">
+        <div class="form-group">
+          <label for="name">Name *</label>
+          <input type="text" id="name" name="name" placeholder="Your name">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" placeholder="your@email.com">
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message *</label>
+          <textarea id="message" name="message" placeholder="Write your message here"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Send Message</button>
+        <div id="formMessage" class="form-message"></div>
+      </form>
+
+      <div class="contact-info">
+        <h3>Other ways to reach me</h3>
+        <p style="margin-top: 0.5rem;">
+          Email: <a href="mailto:karthikrajkannan57@gmail.com">
+          karthikrajkannan57@gmail.com</a>
+        </p>
+        <p style="margin-top: 0.5rem;">
+          I’m open to project discussions, collaborations, or just a quick chat about technology
+          and learning. Feel free to connect with me on my social platforms as well.
+        </p>
+        <ul style="margin-top: 0.7rem; padding-left: 1.1rem; font-size: 0.9rem;">
+          <li>Instagram – daily life & updates</li>
+          <li>GitHub – code repositories and experiments</li>
+          <li>LinkedIn – professional profile & network</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<button id="scrollTopBtn">Top</button>
+
+<footer>
+  <div class="container">
+    © <span id="year"></span> Karthik Raj · Built with HTML, CSS &amp; JavaScript.
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

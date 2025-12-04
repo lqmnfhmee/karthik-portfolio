@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Projects | Karthik Raj</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="container navbar">
+    <div class="nav-brand">Projects</div>
+    <button id="themeToggle">Dark Mode</button>
+    <button id="menuToggle" class="menu-toggle">Menu</button>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="container reveal">
+    <h2 class="section-title">Projects</h2>
+    <p class="section-subtitle">
+      A selection of work that highlights my skills and interests.
+    </p>
+
+    <div class="projects-grid">
+
+  <article class="project-card">
+    <img src="images/ART-apps.png" alt="ART Ticket Booking App" class="project-image">
+
+    <div class="project-tag">Mobile App · UI/UX</div>
+    <h3>ART Ticket Booking App</h3>
+    <p>
+      A conceptual ticket booking interface for the Autonomous Rapid Transit (ART) system.
+      Focused on clear navigation, seat selection, and a smooth purchase flow for commuters.
+    </p>
+  </article>
+
+  <article class="project-card">
+    <img src="images/SALS.png" alt="Smart Awareness Learning System" class="project-image">
+
+    <div class="project-tag">Web App · Learning</div>
+    <h3>Smart Awareness Learning System</h3>
+    <p>
+      An interactive learning platform designed to improve awareness on selected topics through
+      quizzes, progress tracking, and simple analytics for students.
+    </p>
+  </article>
+
+  <article class="project-card">
+    <img src="images/snake-game.webp" alt="Snake Game" class="project-image">
+
+    <div class="project-tag">Game Development</div>
+    <h3>Snake Game</h3>
+    <p>
+      A classic Snake game implementation that explores basic game logic, collision detection,
+      and keyboard controls using programming fundamentals.
+    </p>
+  </article>
+
+</div>
+
+  </section>
+</main>
+
+<button id="scrollTopBtn">Top</button>
+
+<footer>
+  <div class="container">
+    © <span id="year"></span> Karthik Raj · Built with HTML, CSS &amp; JavaScript.
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Me | Karthik Raj</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="container navbar">
+    <div class="nav-brand">About Me</div>
+    <button id="themeToggle">Dark Mode</button>
+    <button id="menuToggle" class="menu-toggle">Menu</button>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="container reveal">
+    <h2 class="section-title">About Me</h2>
+    <p class="section-subtitle">Get to know who I am and what I can do.</p>
+
+    <div class="about-layout">
+      <div class="about-photo">
+        <!-- Replace with your actual photo file -->
+        <img src="images/karthik-photo.jpg" alt="Photo of Karthik Raj">
+      </div>
+
+      <div>
+        <p>
+          Hi, I’m <strong>Karthik Raj</strong>, a full-time student with a strong interest in front-end
+          development, user experience, and interactive applications. I enjoy combining design and
+          logic to build solutions that are both functional and easy to use.
+        </p>
+
+        <p style="margin-top: 0.8rem;">
+          I’m constantly learning new tools, experimenting with personal projects, and collaborating
+          with others to improve my teamwork and communication skills.
+        </p>
+
+        <h3 style="margin-top: 1.4rem;">Skills</h3>
+        <div class="skills-grid">
+          <span class="skill-pill">Teamwork</span>
+          <span class="skill-pill">Time Management</span>
+          <span class="skill-pill">Unity</span>
+          <span class="skill-pill">Figma</span>
+          <span class="skill-pill">HTML, CSS &amp; JavaScript</span>
+          <span class="skill-pill">Python</span>
+          <span class="skill-pill">C++</span>
+          <span class="skill-pill">Java</span>
+          <span class="skill-pill">MySQL</span>
+        </div>
+
+        <p>
+          Contact email: <a href="mailto:karthikrajkannan57@gmail.com">
+          karthikrajkannan57@gmail.com</a>
+        </p>
+
+        <div class="social-links">
+          <a href="https://instagram.com/" target="_blank" rel="noopener">
+            <span class="social-icon">🅾</span> Instagram
+          </a>
+          <a href="https://github.com/" target="_blank" rel="noopener">
+            <span class="social-icon">😺</span> GitHub
+          </a>
+          <a href="https://linkedin.com/" target="_blank" rel="noopener">
+            <span class="social-icon">[in]</span> LinkedIn
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<button id="scrollTopBtn">Top</button>
+
+<footer>
+  <div class="container">
+    © <span id="year"></span> Karthik Raj · Built with HTML, CSS &amp; JavaScript.
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
