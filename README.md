@@ -7,7 +7,7 @@ The website showcases my profile, skills, projects, and contact information in a
 
 ##  Live Preview
 You can view the live website here:  
- https://lqmhfmee.github.io/karthik-portfolio/
+ https://lqmnfhmee.github.io/karthik-portfolio/
 
 ---
 
